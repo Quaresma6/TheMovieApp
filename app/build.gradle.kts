@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "com.example.movieapp"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.movieapp"
@@ -44,6 +44,7 @@ dependencies {
     //Swipe to refresh
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01")
 
+    implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.8.0"))
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")

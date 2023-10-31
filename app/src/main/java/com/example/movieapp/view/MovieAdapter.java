@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.movieapp.MainActivity;
 import com.example.movieapp.R;
 import com.example.movieapp.databinding.MovieLisLayoutBinding;
 import com.example.movieapp.model.Movie;
@@ -19,6 +20,11 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHol
 
     private Context context;
     private ArrayList<Movie> movieArrayList;
+
+    public MovieAdapter(Context context, ArrayList<Movie> movieArrayList) {
+        this.context = context;
+        this.movieArrayList = movieArrayList;
+    }
 
     @NonNull
     @Override
